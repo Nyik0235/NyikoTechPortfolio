@@ -1,4 +1,5 @@
 
+/*background*/
 body {
     background-color: #020817;
     background-image:
@@ -11,6 +12,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+/*Naviagtion bar*/
 .tech-tags{
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +108,9 @@ body {
     font-size: 36px;
     color: #ffffff;
 }
+.hero h1 span{
+    color: #6d28d9;
+}
 .hero h2{
     font-size: 21px;
     color: #ffffff;
@@ -190,6 +195,9 @@ body {
     flex: 1;
     min-width: 0;
     color: #ffffff;
+}
+.about-content span{
+    color: #6d28d9;
 }
 
 /* Mobile Layout */
@@ -302,3 +310,391 @@ body {
         font-size: 11px;
     }
 }
+
+/* EDUCATION SECTION */
+.education {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 60px 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.education h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.education h2 span {
+    color: #6d28d9;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+}
+
+.education-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    max-width: 750px;
+    padding: 30px;
+    text-align: left;
+    background: rgba(5, 15, 40, 0.65);
+    border: 1px solid rgba(0, 217, 255, 0.25);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.education-card:hover {
+    border-color: #00d9ff;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.education-icon {
+    font-size: 40px;
+    color: #00d9ff;
+}
+
+.education-content h3 {
+    color: #ffffff;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.education-content h4 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.education-status {
+    display: inline-block;
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.education-content p:last-child {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* EDUCATION RESPONSIVENESS */
+@media (max-width: 768px) {
+    .education {
+        padding: 40px 20px;
+    }
+
+    .education h2 {
+        font-size: 28px;
+    }
+
+    .education-card {
+        padding: 22px;
+        gap: 15px;
+    }
+
+    .education-content h3 {
+        font-size: 18px;
+    }
+}
+
+/* CERTIFICATIONS SECTION */
+.certifications {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.certifications h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.certifications h2 span {
+    color: #6d28d9;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+}
+
+.certification-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    max-width: 750px;
+    padding: 30px;
+    text-align: left;
+    background: rgba(5, 15, 40, 0.65);
+    border: 1px solid rgba(0, 217, 255, 0.25);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.certification-card:hover {
+    border-color: #00d9ff;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.certification-icon {
+    font-size: 42px;
+    color: #00d9ff;
+}
+
+.certification-content h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.certification-content h4 {
+    color: #00d9ff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.certification-status {
+    display: inline-block;
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.certification-content p:last-child {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* CERTIFICATIONS RESPONSIVENESS */
+@media (max-width: 768px) {
+    .certifications {
+        padding: 40px 20px;
+    }
+
+    .certifications h2 {
+        font-size: 28px;
+            color: #ffffff;
+    }
+
+    .certification-card {
+        padding: 22px;
+        gap: 15px;
+    }
+
+    .certification-content h3 {
+        font-size: 19px;
+    }
+}
+.certifications .section-title {
+    color: #ffffff;
+}
+.section-title span{
+    color: #6d28d9;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* PROFESSIONAL CERTIFICATION CARD DESIGN */
+
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.certification-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: auto;
+    max-width: none;
+    min-height: 260px;
+    padding: 30px 25px;
+    text-align: left;
+    background: linear-gradient(
+        145deg,
+        rgba(8, 25, 60, 0.9),
+        rgba(5, 10, 35, 0.95)
+    );
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+    border-color: #00d9ff;
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.2),
+        0 0 30px rgba(109, 40, 217, 0.15);
+    transform: translateY(-6px);
+}
+
+.certification-icon {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.certification-content h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.certification-content h4 {
+    color: #00d9ff;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.certification-status {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.certification-content p:last-child {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.certification-content p {
+    color: #ffffff;
+}
+
+/* RESPONSIVE CERTIFICATION CARDS */
+@media (max-width: 900px) {
+    .certifications-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .certifications-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-card {
+        min-height: auto;
+    }
+}
+
+/* CONTACT SECTION */
+.contact {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.contact h2 span {
+    color: #6d28d9;
+}
+
+.contact-description {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 16px;
+    background: rgba(5, 15, 40, 0.85);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #00d9ff;
+    box-shadow: 0 0 12px rgba(0, 217, 255, 0.25);
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+    color: #94a3b8;
+}
+
+.contact-container textarea {
+    resize: vertical;
+}
+
+.contact-container button {
+    padding: 15px 25px;
+    background: linear-gradient(90deg, #0066ff, #6d28d9);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-container button:hover {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+/* CONTACT RESPONSIVENESS */
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 20px;
+        margin: 50px auto;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+}
+
+#home,
+#about,
+#skills,
+#education,
+#certifications,
+#contact {
+    scroll-margin-top: 100px;
+}
+
